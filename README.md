@@ -9,3 +9,6 @@
 
 ### [4. 제품 상세 페이지 구현](https://www.youtube.com/watch?v=QcNiaDrp2kQ&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=4)
 - 부트스트랩 기반 제품상세 페이지 html 하드코딩 구현!
+
+### [5. 제품 등록 페이지 구현](https://www.youtube.com/watch?v=nCuHP7zgELY&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=6)
+-  
