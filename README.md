@@ -22,8 +22,22 @@ docker pull mariadb
 # 이미지 확인하기
 docker image ls
 
-# 도커 컨테이너 실행(-d:백그라운드 실행, -p: 포트 3306:3306, -e: 환경변수(패스워드설정)MYSQL_ROOT_PATHWORD=mariadb 이름:mariadb)
-docker run --name mariadb -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mariadb
+# 도커 컨테이너 실행(-d:백그라운드 실행, -p: 포트 3305:3305, -e: 환경변수(패스워드설정)MYSQL_ROOT_PATHWORD=mariadb 이름:mariadb)
+docker run --name mariadb -d -p 3305:3305 -e MYSQL_ROOT_PASSWORD=mariadb mariadb
 
+#실행 확인
+docker ps
+==============
+#마리아 디비 접속 실행
+docker exec -it mariadb /bin/bash
+
+#위에서 만든 이미지 마리아디비에 접속 그리고 패스워드 위에 같은 패스워드
+mysql -u root -p
+
+#설치정보 확인 가능!
+status 
+
+# Sequelpro 툴 (테이블 만들고, 쿼리실행 툴) - 맥버전만 가능!
+- ah~ error !!!!!
 
 ```
