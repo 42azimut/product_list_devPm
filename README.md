@@ -13,6 +13,8 @@
 ### [5. 제품 등록 페이지 구현](https://www.youtube.com/watch?v=nCuHP7zgELY&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=6)
 -  부트스트랩 기반 제품등록 페이지 html 하드코딩 구현!
 
+
+# 마리아 디비 설치 에러!! 기존 mysql 도 에러!!!!! 머선 일이고 !!!!!!
 ### [6. MariaDB 설치하기](https://www.youtube.com/watch?v=kLdHp6zrPJE&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=6)
 - 도커를 이미지를 이용한 마리아 디비 설치!
 ```
@@ -23,7 +25,8 @@ docker pull mariadb
 docker image ls
 
 # 도커 컨테이너 실행(-d:백그라운드 실행, -p: 포트 3305:3305, -e: 환경변수(패스워드설정)MYSQL_ROOT_PATHWORD=mariadb 이름:mariadb)
-docker run --name mariadb -d -p 3305:3305 -e MYSQL_ROOT_PASSWORD=mariadb mariadb
+<오타 주의!1  이름을 ㅠㅠ  maraidb>
+docker run --name maraidb -d -p 3307:3307 -e MYSQL_ROOT_PASSWORD=mariadb mariadb
 
 #실행 확인
 docker ps
@@ -37,7 +40,20 @@ mysql -u root -p
 #설치정보 확인 가능!
 status 
 
+
 # Sequelpro 툴 (테이블 만들고, 쿼리실행 툴) - 맥버전만 가능!
 - ah~ error !!!!!
 
 ```
+
+## [7. DB 테이블 설계하기]()
+
+## [8. SQL 작성하기]()
+
+## [9. 웹서버 구축](https://www.youtube.com/watch?v=odBMChuTGqs&list=PLqbWuGdVBJd38FoWC6IG__QlzBtYoqyfp&index=9)
+- products/server 폴더 만들고
+- npm init   #디폴트값으로 모두 설정! 
+- npm i express --save  #익스프레스 설치
+- npm i express-session --save  #session 설치
+- npm i mysql --save   # mysql 모둘 설치(마리아 디비 연동하기 위해)
+## [10. DB연동하기]()
